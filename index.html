@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake, Water, Gun Game</title>
+    <link rel="icon" href="snake.svg" type="svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">🐍 Snake, Water, Gun 🔫</h1>
+      <div class="scoreboard">
+        <div class="score">
+          <h2>You</h2>
+          <p id="user-score">0</p>
+        </div>
+        <div class="score">
+          <h2>Computer</h2>
+          <p id="computer-score">0</p>
+        </div>
+      </div>
+
+      <div class="choices">
+        <button class="choice" data-choice="snake">🐍 Snake</button>
+        <button class="choice" data-choice="water">💧 Water</button>
+        <button class="choice" data-choice="gun">🔫 Gun</button>
+      </div>
+
+      <div class="result">
+        <p id="result-message">Choose your move to start!</p>
+      </div>
+
+      <div class="game-over" id="game-over">
+        <h2 id="game-over-message"></h2>
+        <button id="play-again" class="play-again">🔁 Play Again</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
